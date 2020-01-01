@@ -18,7 +18,7 @@ systemd-logind:
     - name: systemd-logind
     - enable: True
 
-systemd-timesyncd:
+chrony:
   service.running:
-    - name: systemd-timesyncd
+    - name: chrony
     - enable: True
