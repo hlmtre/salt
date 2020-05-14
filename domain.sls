@@ -5,6 +5,13 @@
   require:
     - pkg: sssd
 
+/etc/ssh_config:
+  file.managed:
+    - name: /etc/ssh/ssh_config
+    - source: salt://managed_files/ssh_config
+  require:
+    - pkg: sssd
+
 /etc/sssd/sssd.conf:
   file.managed:
     - name: /etc/sssd/sssd.conf

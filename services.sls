@@ -18,6 +18,11 @@ systemd-logind:
     - name: systemd-logind
     - enable: True
 
+serial-getty@ttyS0:
+  service.running:
+    - name: serial-getty@ttyS0
+    - enable: True
+
 chrony:
   service.running:
     - name: chrony

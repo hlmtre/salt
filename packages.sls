@@ -10,7 +10,7 @@ install_basics:
       - vim # general system
       - git
       - sudo
-      - open-vm-tools
+      - qemu-guest-agent
       - openssh-server
       - tmux
       - fail2ban
@@ -18,6 +18,7 @@ install_basics:
       - haveged
       - sssd-tools
       - build-essential # general dev
+      - cmake
       - libncurses5-dev
       - libncursesw5-dev
       - libgif-dev # emacs build
